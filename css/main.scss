@@ -1,5 +1,10 @@
-@import url('normalize.css');
+//normalize
+@import "_misc/normalize.css";
 
-body {
-	background: black;
-}
+//mixins
+@import "_misc/fonts.scss";
+
+//styles
+@import "style/styles.scss";
+
+

@@ -1,1 +1,168 @@
-@import url("normalize.css");body{background:black}
+@charset "UTF-8";
+@import url(_misc/normalize.css);
+@font-face {
+  font-family: 'Ubuntu';
+  src: url("../fonts/subset-Ubuntu-Light.eot");
+  src: url("../fonts/subset-Ubuntu-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/subset-Ubuntu-Light.woff2") format("woff2"), url("../fonts/subset-Ubuntu-Light.woff") format("woff"), url("../fonts/subset-Ubuntu-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Ubuntu';
+  src: url("../fonts/subset-Ubuntu-Medium.eot");
+  src: url("../fonts/subset-Ubuntu-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/subset-Ubuntu-Medium.woff2") format("woff2"), url("../fonts/subset-Ubuntu-Medium.woff") format("woff"), url("../fonts/subset-Ubuntu-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Ubuntu';
+  src: url("../fonts/subset-Ubuntu.eot");
+  src: url("../fonts/subset-Ubuntu.eot?#iefix") format("embedded-opentype"), url("../fonts/subset-Ubuntu.woff2") format("woff2"), url("../fonts/subset-Ubuntu.woff") format("woff"), url("../fonts/subset-Ubuntu.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Ubuntu';
+  src: url("../fonts/subset-Ubuntu-Bold.eot");
+  src: url("../fonts/subset-Ubuntu-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/subset-Ubuntu-Bold.woff2") format("woff2"), url("../fonts/subset-Ubuntu-Bold.woff") format("woff"), url("../fonts/subset-Ubuntu-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Lifehack';
+  src: url("../fonts/subset-Lifehack-Medium.eot");
+  src: url("../fonts/subset-Lifehack-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/subset-Lifehack-Medium.woff2") format("woff2"), url("../fonts/subset-Lifehack-Medium.woff") format("woff"), url("../fonts/subset-Lifehack-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Gagalin';
+  src: url("../fonts/subset-Gagalin-Regular.eot");
+  src: url("../fonts/subset-Gagalin-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/subset-Gagalin-Regular.woff2") format("woff2"), url("../fonts/subset-Gagalin-Regular.woff") format("woff"), url("../fonts/subset-Gagalin-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  margin: 0; }
+
+h1 {
+  font-family: lifehack;
+  font-size: 65px;
+  line-height: 60px;
+  font-weight: 500;
+  color: #fff; }
+
+span.title {
+  font-family: Gagalin;
+  font-size: 72px;
+  display: block;
+  line-height: 85px;
+  padding-bottom: 20px; }
+
+.first-screen {
+  background: url("../img/first-item-bg-overlay.png") no-repeat center, url("../img/first-item-bg.jpg") no-repeat center;
+  background-size: cover, cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw; }
+  .first-screen__container {
+    height: 100vh;
+    width: 960px;
+    padding: 12px 0px 40px 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .first-screen__header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%; }
+  .first-screen__logo img {
+    max-width: 92px; }
+  .first-screen__menu {
+    text-transform: uppercase; }
+    .first-screen__menu-items {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      font-family: Ubuntu;
+      font-weight: 500; }
+      .first-screen__menu-items li:before {
+        content: "•";
+        padding: 0 16px 0 16px;
+        color: #fff; }
+      .first-screen__menu-items li:first-child::before, .first-screen__menu-items li:last-child::before {
+        content: "";
+        padding: 0;
+        padding-left: 16px; }
+      .first-screen__menu-items li:last-child a {
+        background: #e45028;
+        border-radius: 5px;
+        padding: 13px 16px; }
+      .first-screen__menu-items li:last-child a:hover {
+        background: #c1401e; }
+    .first-screen__menu-item {
+      text-decoration: none;
+      color: #fff;
+      font-size: 13px; }
+  .first-screen__content {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap; }
+  .first-screen__burger {
+    background: url("../img/drops.png") top no-repeat;
+    background-size: contain;
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    .first-screen__burger img {
+      margin-top: -50px; }
+  .first-screen__info {
+    width: 50%;
+    padding: 20px; }
+    .first-screen__info span.title {
+      color: #f9b43b; }
