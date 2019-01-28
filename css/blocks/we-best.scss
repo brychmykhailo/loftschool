@@ -1,0 +1,38 @@
+.we-best {
+	background: url('../img/we-best.jpg') no-repeat center;
+	background-size: cover;
+}
+
+.we-best__info {
+		display:flex;
+		justify-content: flex-start;
+}
+
+.we-best__info-block {
+			display:flex;
+			flex-direction: column;
+			justify-content: flex-start;
+			padding:10px;
+			flex: 1;
+			margin: 0 auto;
+			text-align: center;
+}
+
+.we-best__info-block-icon {
+	height: 89px;
+}
+
+.we-best__info-block-title {
+	@include lifehack();
+	padding-top: 30px;
+	font-size:24px;
+	line-height: 28px;
+	color:$black;
+}
+
+.we-best__info-block-subtitle {
+	padding-top: 14px;
+	@include ubuntu(light);
+	font-size:14px;
+	line-height: 24px;
+}

@@ -1,10 +1,29 @@
+//colors
+$white: #fff;
+$red: #e45028;
+$red-hover: #c1401e;
+$yellow: #f9b43b;
+$black: #2f3234;
+$black-hover:#1f2122;
+$orange: #e45028;
+
 //normalize
-@import "_misc/normalize.css";
+@import "_misc/normalize.scss";
 
-//mixins
+//misc
 @import "_misc/fonts.scss";
+@import "_misc/layout.scss";
 
-//styles
-@import "style/styles.scss";
+//common
+@import "blocks/common/btn.scss";
+@import "blocks/common/section-title.scss";
+@import "blocks/common/fixed-menu.scss";
+
+//blocks
+@import "blocks/header.scss";
+@import "blocks/first-screen.scss";
+@import "blocks/we-best.scss";
+@import "blocks/reviews.scss";
+
 
 

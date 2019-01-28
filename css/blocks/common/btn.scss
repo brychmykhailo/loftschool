@@ -1,0 +1,26 @@
+.btn {
+	margin:0;
+	border-radius: 5px;
+	padding: 11px 16px;
+	text-decoration: none;
+
+	&-red {
+	background: $red;
+
+		&:hover{
+		background: $red-hover;
+		}
+
+	}
+
+	&-black {
+	background: $black;
+	color:$white;
+
+		&:hover{
+		background: $black-hover;
+		}
+		
+	}
+
+}

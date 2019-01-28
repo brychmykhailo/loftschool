@@ -15,39 +15,176 @@
 	<!--[if lte IE 8]>
 	<p>Похоже, что вы используете устаревший браузер. Пожалуйста обновите его </p><a href="https://support.microsoft.com/uk-ua/help/4027741/windows-get-microsoft-edge">Здесь</a>
 	<![endif]-->
-		<div class="first-screen">
-			<div class="first-screen__container">
-				<div class="first-screen__header">
-					<div class="first-screen__logo"><img src="img/logo.png" alt=""></div>
-					<div class="first-screen__menu">
-						<ul class="first-screen__menu-items">
-							<li><a href="#" class="first-screen__menu-item">О нас</a></li>
-							<li><a href="#" class="first-screen__menu-item">Бургеры</a></li>
-							<li><a href="#" class="first-screen__menu-item">Команда</a></li>
-							<li><a href="#" class="first-screen__menu-item">Меню</a></li>
-							<li><a href="#" class="first-screen__menu-item">Отзывы</a></li>
-							<li><a href="#" class="first-screen__menu-item">как мы работаем</a></li>
-							<li><a href="#" class="first-screen__menu-item">Контакты</a></li>
-							<li><a href="#" class="first-screen__menu-item">Заказать</a></li>
+
+
+<div class="wrapper">
+
+	<nav class="fixed-menu">
+		<ul class="fixed-menu-points">
+			<li class="fixed-menu-point"><a class="fixed-menu-link" href="#first-screen"></a></li>
+			<li class="fixed-menu-point"><a class="fixed-menu-link" href="#we-best"></a></li>
+			<li class="fixed-menu-point"><a class="fixed-menu-link" href="#reviews"></a></li>
+			<li class="fixed-menu-point"><a class="fixed-menu-link" href="#"></a></li>
+			<li class="fixed-menu-point"><a class="fixed-menu-link" href="#"></a></li>
+			<li class="fixed-menu-point"><a class="fixed-menu-link" href="#"></a></li>
+			<li class="fixed-menu-point"><a class="fixed-menu-link" href="#"></a></li>
+			<li class="fixed-menu-point"><a class="fixed-menu-link" href="#"></a></li>
+			<li class="fixed-menu-point"><a class="fixed-menu-link" href="#"></a></li>
+		</ul>
+	</nav>
+
+	<div class="maincontent">
+
+		<section class="section first-screen" id="first-screen">
+			<div class="container container-space-between">
+
+				<header class="header">
+					<div class="header__logo">
+						<img src="img/logo.png" alt=""></div>
+					<nav class="header__nav">
+						<ul class="header__nav-items">
+							<li><a href="#" class="header__nav-item">О нас</a></li>
+							<li><a href="#" class="header__nav-item">Бургеры</a></li>
+							<li><a href="#" class="header__nav-item">Команда</a></li>
+							<li><a href="#" class="header__nav-item">Меню</a></li>
+							<li><a href="#" class="header__nav-item">Отзывы</a></li>
+							<li><a href="#" class="header__nav-item">как мы работаем</a></li>
+							<li><a href="#" class="header__nav-item">Контакты</a></li>
+							<li><a href="#" class="btn btn-red header__nav-item">Заказать</a></li>
 						</ul>
-					</div>
-				</div>
+					</nav>
+				</header>
 			
 				<div class="first-screen__content">
 					<div class="first-screen__burger">
 						<img src="img/burger.png" alt="">
 					</div>
 					<div class="first-screen__info">
-						<h1><span class="title">Мы делаем</span>натуральные бургеры</h1>
+						<div class="section-title section-title_yellow">Мы делаем</div>
+						<div class="first-screen__desc">натуральные бургеры</div>
 					</div>
 				</div>
 			
-				<div class="first-screen__arrow"><img src="img/arrow-scroll.png" alt="arrow-scroll"></div>
-
-		</div>
+				<div class="first-screen__arrow">
+					<a href="#we-best"><img src="img/arrow-scroll.png" alt="arrow-scroll"></a>
+				</div>
 
 			</div>
+		</div>
 			
+		<section class="section we-best" id="we-best">
+			<div class="container container-center">
+
+				<div class="section-title section-title_black">Мы лучшие</div>
+
+				<div class="we-best__info">
+
+					<div class="we-best__info-block">
+						<div class="we-best__info-block-icon"><img src="img/icons/meat.svg" alt=""></div>
+						<div class="we-best__info-block-title">100% свежее мясо</div>
+						<div class="we-best__info-block-subtitle">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Ямб неравномерен.</div>
+					</div>
+					<div class="we-best__info-block">
+						<div class="we-best__info-block-icon"><img src="img/icons/hand.svg" alt=""></div>
+						<div class="we-best__info-block-title">Ручная сборка</div>
+						<div class="we-best__info-block-subtitle">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Первое полустишие притягивает сюжетный реформаторский пафос.</div>
+					</div>
+					<div class="we-best__info-block">
+						<div class="we-best__info-block-icon"><img src="img/icons/natural.svg" alt=""></div>
+						<div class="we-best__info-block-title">Натуральные ингредиенты</div>
+						<div class="we-best__info-block-subtitle">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест.</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<section class="section reviews" id="reviews">
+			<ul class="reviews-items">
+				<li class="reviews-item" style="background-image:url(img/reviews/1.jpg);">
+					<div class="reviews-item-hover">
+						<div class="reviews-title">Константин Спилберг</div>
+						<div class="reviews-text">
+							<p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
+						</div>
+						<div class="reviews-btn"><a href="#" class="btn btn-black">Подробнее</a></div>
+					</div>
+				</li>
+
+				<li class="reviews-item" style="background-image:url(img/reviews/2.jpg);">
+					<div class="reviews-item-hover">
+						<div class="reviews-title">Константин Спилберг</div>
+						<div class="reviews-text">
+							<p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
+						</div>
+						<div class="reviews-btn"><a href="#" class="btn btn-black">Подробнее</a></div>
+					</div>
+				</li>
+
+				<li class="reviews-item" style="background-image:url(img/reviews/3.jpg);">
+					<div class="reviews-item-hover">
+						<div class="reviews-title">Константин Спилберг</div>
+						<div class="reviews-text">
+							<p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
+						</div>
+						<div class="reviews-btn"><a href="#" class="btn btn-black">Подробнее</a></div>
+					</div>
+				</li>
+
+				<li class="reviews-item" style="background-image:url(img/reviews/4.jpg);">
+					<div class="reviews-item-hover">
+						<div class="reviews-title">Константин Спилберг</div>
+						<div class="reviews-text">
+							<p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
+						</div>
+						<div class="reviews-btn"><a href="#" class="btn btn-black">Подробнее</a></div>
+					</div>
+				</li>
+
+				<li class="reviews-item" style="background-image:url(img/reviews/5.jpg);">
+					<div class="reviews-item-hover">
+						<div class="reviews-title">Константин Спилберг</div>
+						<div class="reviews-text">
+							<p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
+						</div>
+						<div class="reviews-btn"><a href="#" class="btn btn-black">Подробнее</a></div>
+					</div>
+				</li>
+
+				<li class="reviews-item" style="background-image:url(img/reviews/6.jpg);">
+					<div class="reviews-item-hover">
+						<div class="reviews-title">Константин Спилберг</div>
+						<div class="reviews-text">
+							<p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
+						</div>
+						<div class="reviews-btn"><a href="#" class="btn btn-black">Подробнее</a></div>
+					</div>
+				</li>
+
+				<li class="reviews-item" style="background-image:url(img/reviews/7.jpg);">
+					<div class="reviews-item-hover">
+						<div class="reviews-title">Константин Спилберг</div>
+						<div class="reviews-text">
+							<p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
+						</div>
+						<div class="reviews-btn"><a href="#" class="btn btn-black">Подробнее</a></div>
+					</div>
+				</li>
+
+				<li class="reviews-item" style="background-image:url(img/reviews/8.jpg);">
+					<div class="reviews-item-hover">
+						<div class="reviews-title">Константин Спилберг</div>
+						<div class="reviews-text">
+							<p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
+						</div>
+						<div class="reviews-btn"><a href="#" class="btn btn-black">Подробнее</a></div>
+					</div>
+				</li>
+			</ul>
+		</div>
+
+	</div>
+</div>
 
 	</body>
 

@@ -1,0 +1,44 @@
+.we-best {
+  background: url("../img/we-best.jpg") no-repeat center;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw; }
+  .we-best .we-best__info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .we-best .we-best__info-block {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: start;
+      -ms-flex-pack: start;
+      justify-content: flex-start;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      padding: 10px;
+      -webkit-box-flex: 1;
+      -ms-flex: 1;
+      flex: 1; }
+      .we-best .we-best__info-block-title {
+        font-size: 24px;
+        line-height: 28px;
+        font-family: 'Lifehack'; }
