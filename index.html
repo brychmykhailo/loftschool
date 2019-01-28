@@ -19,7 +19,7 @@
 
 		<div class="wrapper">
 
-			<nav class="fixed-menu">
+			<nav class="fixed-menu" id="fixed-menu">
 				<ul class="fixed-menu-points">
 					<li class="fixed-menu-point"><a class="fixed-menu-link" href="#first-screen"></a></li>
 					<li class="fixed-menu-point"><a class="fixed-menu-link" href="#we-best"></a></li>
@@ -41,13 +41,13 @@
 						<header class="header">
 							<div class="header__logo">
 								<img src="img/logo.png" alt=""></div>
-							<nav class="header__nav">
+							<nav class="header__nav" id="header__nav">
 								<ul class="header__nav-items">
-									<li><a href="#" class="header__nav-item">О нас</a></li>
+									<li><a href="#we-best" class="header__nav-item">О нас</a></li>
 									<li><a href="#" class="header__nav-item">Бургеры</a></li>
 									<li><a href="#" class="header__nav-item">Команда</a></li>
 									<li><a href="#" class="header__nav-item">Меню</a></li>
-									<li><a href="#" class="header__nav-item">Отзывы</a></li>
+									<li><a href="#reviews" class="header__nav-item">Отзывы</a></li>
 									<li><a href="#" class="header__nav-item">как мы работаем</a></li>
 									<li><a href="#" class="header__nav-item">Контакты</a></li>
 									<li><a href="#" class="btn btn-red header__nav-item">Заказать</a></li>
@@ -186,6 +186,27 @@
 			</div>
 
 		</div>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+    $("#header__nav").on("click","a", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 1000);
+    });
+});
+$(document).ready(function(){
+	$("#fixed-menu").on("click","a", function (event) {
+	    event.preventDefault();
+	    var id  = $(this).attr('href'),
+	        top = $(id).offset().top;
+	    $('body,html').animate({scrollTop: top}, 1000);
+	});
+});
+</script>
 
 	</body>
 </html>
