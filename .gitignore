@@ -4,3 +4,5 @@
 # ignore all config files
 *.config
 
+*swp
+*yml
