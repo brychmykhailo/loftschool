@@ -3,6 +3,8 @@
 	background-size: cover;
 	display:flex;
 	justify-content: flex-end;
+	height: 100vh;
+	width: 100%;
 }
 
 .team .right-section
@@ -11,7 +13,6 @@
 	height: 100%;
 	padding: 110px 100px;
 	background-color: rgba(47, 50, 52, 0.93);
-	position: absolute;
 }
 
 .accordion {

@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
-	
+
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<title>Главная страница</title>
@@ -11,300 +11,371 @@
 	<link rel="stylesheet" href="css/main.css" media="screen, projection, print">
 
 </head>
-	<body>
+
+<body>
 
 	<!--[if lte IE 8]>
 	<p>Похоже, что вы используете устаревший браузер. Пожалуйста обновите его </p><a href="https://support.microsoft.com/uk-ua/help/4027741/windows-get-microsoft-edge">Здесь</a>
 	<![endif]-->
 
+	<div class="wrapper">
 
-		<div class="wrapper">
+		<nav class="fixed-menu" id="fixed-menu">
+			<ul class="fixed-menu-points">
+				<li class="fixed-menu-point"><a class="fixed-menu-link" href="#first-screen"></a></li>
+				<li class="fixed-menu-point"><a class="fixed-menu-link" href="#we-best"></a></li>
+				<li class="fixed-menu-point"><a class="fixed-menu-link" href="#team"></a></li>
+				<li class="fixed-menu-point"><a class="fixed-menu-link" href="#menu"></a></li>
+				<li class="fixed-menu-point"><a class="fixed-menu-link" href="#reviews"></a></li>
+				<li class="fixed-menu-point"><a class="fixed-menu-link" href="#"></a></li>
+				<li class="fixed-menu-point"><a class="fixed-menu-link" href="#"></a></li>
+				<li class="fixed-menu-point"><a class="fixed-menu-link" href="#"></a></li>
+				<li class="fixed-menu-point"><a class="fixed-menu-link" href="#"></a></li>
+			</ul>
+		</nav>
 
-			<nav class="fixed-menu" id="fixed-menu">
-				<ul class="fixed-menu-points">
-					<li class="fixed-menu-point"><a class="fixed-menu-link" href="#first-screen"></a></li>
-					<li class="fixed-menu-point"><a class="fixed-menu-link" href="#we-best"></a></li>
-					<li class="fixed-menu-point"><a class="fixed-menu-link" href="#team"></a></li>
-					<li class="fixed-menu-point"><a class="fixed-menu-link" href="#reviews"></a></li>
-					<li class="fixed-menu-point"><a class="fixed-menu-link" href="#"></a></li>
-					<li class="fixed-menu-point"><a class="fixed-menu-link" href="#"></a></li>
-					<li class="fixed-menu-point"><a class="fixed-menu-link" href="#"></a></li>
-					<li class="fixed-menu-point"><a class="fixed-menu-link" href="#"></a></li>
-					<li class="fixed-menu-point"><a class="fixed-menu-link" href="#"></a></li>
-				</ul>
-			</nav>
+		<div class="maincontent">
 
-			<div class="maincontent">
+			<section class="section first-screen" id="first-screen">
+				<div class="container container-space-between">
 
-				<section class="section first-screen" id="first-screen">
-					<div class="container container-space-between">
+					<header class="header">
+						<div class="header__logo">
+							<a href="/"><img src="img/logo.png" alt=""></a></div>
+						<nav class="header__nav" id="header__nav">
+							<ul class="header__nav-items">
+								<li><a href="#we-best" class="header__nav-item">О нас</a></li>
+								<li><a href="#" class="header__nav-item">Бургеры</a></li>
+								<li><a href="#team" class="header__nav-item">Команда</a></li>
+								<li><a href="#menu" class="header__nav-item">Меню</a></li>
+								<li><a href="#reviews" class="header__nav-item">Отзывы</a></li>
+								<li><a href="#" class="header__nav-item">как мы работаем</a></li>
+								<li><a href="#contacts" class="header__nav-item">Контакты</a></li>
+								<li><a href="#" class="btn btn-red header__nav-item">Заказать</a></li>
+							</ul>
+						</nav>
+					</header>
 
-						<header class="header">
-							<div class="header__logo">
-								<a href="/"><img src="img/logo.png" alt=""></a></div>
-							<nav class="header__nav" id="header__nav">
-								<ul class="header__nav-items">
-									<li><a href="#we-best" class="header__nav-item">О нас</a></li>
-									<li><a href="#" class="header__nav-item">Бургеры</a></li>
-									<li><a href="#team" class="header__nav-item">Команда</a></li>
-									<li><a href="#" class="header__nav-item">Меню</a></li>
-									<li><a href="#reviews" class="header__nav-item">Отзывы</a></li>
-									<li><a href="#" class="header__nav-item">как мы работаем</a></li>
-									<li><a href="#" class="header__nav-item">Контакты</a></li>
-									<li><a href="#" class="btn btn-red header__nav-item">Заказать</a></li>
-								</ul>
-							</nav>
-						</header>
-					
-						<div class="first-screen__content">
-							<div class="first-screen__burger">
-								<img src="img/burger.png" alt="">
-							</div>
-							<div class="first-screen__info">
-								<div class="section-title section-title_yellow">Мы делаем</div>
-								<div class="first-screen__desc">натуральные бургеры</div>
-							</div>
+					<div class="first-screen__content">
+						<div class="first-screen__burger">
+							<img src="img/burger.png" alt="">
 						</div>
-					
-						<div class="first-screen__arrow">
-							<a href="#we-best"><img src="img/arrow-scroll.png" alt="arrow-scroll"></a>
+						<div class="first-screen__info">
+							<div class="section-title section-title_yellow">Мы делаем</div>
+							<div class="first-screen__desc">натуральные бургеры</div>
 						</div>
-
 					</div>
-				</section>
-					
-				<section class="section we-best" id="we-best">
-					<div class="container container-center">
 
-						<div class="section-title section-title_black">Мы лучшие</div>
-
-						<ul class="we-best__info">
-
-							<li class="we-best__info-block">
-								<svg>
-									<use xlink:href="img/sprite.svg#phone" />
+					<div class="first-screen__arrow">
+						<a href="#">
+								<svg class="arrow-scroll-icon">
+									<use xlink:href="img/sprite.svg#arrow-scroll"></use>
 								</svg>
-								<div class="we-best__info-block-icon">
-									<svg class="meat-icon">
-										<use xlink:href="#elem"></use>	
-									</svg>
-								</div>
-								<div class="we-best__info-block-title">100% свежее мясо</div>
-								<div class="we-best__info-block-subtitle">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Ямб неравномерен.</div>
-							</li>
-							<li class="we-best__info-block">
-								<div class="we-best__info-block-icon"><img src="img/svg/hand.svg" alt=""></div>
-								<div class="we-best__info-block-title">Ручная сборка</div>
-								<div class="we-best__info-block-subtitle">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Первое полустишие притягивает сюжетный реформаторский пафос.</div>
-							</li>
-							<li class="we-best__info-block">
-								<div class="we-best__info-block-icon"><img src="img/svg/natural.svg" alt=""></div>
-								<div class="we-best__info-block-title">Натуральные ингредиенты</div>
-								<div class="we-best__info-block-subtitle">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест.</div>
-
-							</li>
-						</ul>
+						</a>
 					</div>
-				</section>
 
-				<section class="section team" id="team">
-					<div class="right-section">
-						<div class="section-title section-title_yellow">Команда</div>
+				</div>
+			</section>
 
-							<div class="accordion">
+			<section class="section we-best" id="we-best">
+				<div class="container container-center">
 
-							    <div class="accordion-item">
-							        <div class="accordion-head">
-							            <div class="icon"></div>
-							            <div class="title">Дэниэл Редклиф</div>
-							        </div>
-							        <div class="accordion-content">
-							        	<div class="accordion-content-img" style="background-image: url(img/team-person.jpg);"></div>
-							            <div class="accordion-content-desc">
-							            	<p class="position">Оператор</p>
-							            	<p>
-							               		С радостью поможет подобрать идеальный бургер и оформить заказ.
-							                </p>
-							            </div>
-							        </div>
-						    	</div>
+					<div class="section-title section-title_black">Мы лучшие</div>
 
-						    	<div class="accordion-item">
-							        <div class="accordion-head">
-							            <div class="icon"></div>
-							            <div class="title">Ричард Джеймс</div>
-							        </div>
-							        <div class="accordion-content">
-							        	<div class="accordion-content-img" style="background-image: url(img/team-person.jpg);"></div>
-							            <div class="accordion-content-desc">
-							            	<p class="position">Оператор</p>
-							            	<p>
-							               		С радостью поможет подобрать идеальный бургер и оформить заказ.
-							                </p>
-							            </div>
-							        </div>
-						    	</div>
+					<ul class="we-best__info">
 
-							    <div class="accordion-item">
-							        <div class="accordion-head">
-							            <div class="icon"></div>
-							            <div class="title">Джейк Финн</div>
-							        </div>
-							        <div class="accordion-content">
-							        	<div class="accordion-content-img" style="background-image: url(img/team-person.jpg);"></div>
-							            <div class="accordion-content-desc">
-							            	<p class="position">Оператор</p>
-							            	<p>
-							               		С радостью поможет подобрать идеальный бургер и оформить заказ.
-							                </p>
-							            </div>
-							        </div>
-						    	</div>
-
-						    	<div class="accordion-item">
-							        <div class="accordion-head">
-							            <div class="icon"></div>
-							            <div class="title">Николай Иванов</div>
-							        </div>
-							        <div class="accordion-content">
-							        	<div class="accordion-content-img" style="background-image: url(img/team-person.jpg);"></div>
-							            <div class="accordion-content-desc">
-							            	<p class="position">Оператор</p>
-							            	<p>
-							               		С радостью поможет подобрать идеальный бургер и оформить заказ.
-							                </p>
-							            </div>
-							        </div>
-						    	</div>
+						<li class="we-best__info-block">
+							<div class="we-best__info-block-icon">
+								<svg class="meat-icon">
+									<use xlink:href="img/sprite.svg#meat"></use>
+								</svg>
 							</div>
-					</div>
-				</section>
-
-				<section class="section reviews" id="reviews">
-					<ul class="reviews-items">
-						<li class="reviews-item" style="background-image:url(img/reviews/1.jpg);">
-							<div class="reviews-item-hover">
-								<div class="reviews-title">Константин Спилберг</div>
-								<div class="reviews-text">
-									<p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
-								</div>
-								<div class="reviews-btn"><a href="#" class="btn btn-black">Подробнее</a></div>
-							</div>
+							<div class="we-best__info-block-title">100% свежее мясо</div>
+							<div class="we-best__info-block-subtitle">Драма представляет собой деструктивный цикл. Анапест представляет
+								собой анапест. Ямб неравномерен.</div>
 						</li>
-
-						<li class="reviews-item" style="background-image:url(img/reviews/2.jpg);">
-							<div class="reviews-item-hover">
-								<div class="reviews-title">Константин Спилберг</div>
-								<div class="reviews-text">
-									<p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
-								</div>
-								<div class="reviews-btn"><a href="#" class="btn btn-black">Подробнее</a></div>
+						<li class="we-best__info-block">
+							<div class="we-best__info-block-icon">
+								<svg class="hand-icon">
+									<use xlink:href="img/sprite.svg#hand"></use>
+								</svg>
 							</div>
+							<div class="we-best__info-block-title">Ручная сборка</div>
+							<div class="we-best__info-block-subtitle">Драма представляет собой деструктивный цикл. Анапест представляет
+								собой анапест. Первое полустишие притягивает сюжетный реформаторский пафос.</div>
 						</li>
-
-						<li class="reviews-item" style="background-image:url(img/reviews/3.jpg);">
-							<div class="reviews-item-hover">
-								<div class="reviews-title">Константин Спилберг</div>
-								<div class="reviews-text">
-									<p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
-								</div>
-								<div class="reviews-btn"><a href="#" class="btn btn-black">Подробнее</a></div>
+						<li class="we-best__info-block">
+							<div class="we-best__info-block-icon">
+								<svg class="natural-icon">
+									<use xlink:href="img/sprite.svg#natural"></use>
+								</svg>
 							</div>
-						</li>
+							<div class="we-best__info-block-title">Натуральные ингредиенты</div>
+							<div class="we-best__info-block-subtitle">Драма представляет собой деструктивный цикл. Анапест представляет
+								собой анапест.</div>
 
-						<li class="reviews-item" style="background-image:url(img/reviews/4.jpg);">
-							<div class="reviews-item-hover">
-								<div class="reviews-title">Константин Спилберг</div>
-								<div class="reviews-text">
-									<p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
-								</div>
-								<div class="reviews-btn"><a href="#" class="btn btn-black">Подробнее</a></div>
-							</div>
-						</li>
-
-						<li class="reviews-item" style="background-image:url(img/reviews/5.jpg);">
-							<div class="reviews-item-hover">
-								<div class="reviews-title">Константин Спилберг</div>
-								<div class="reviews-text">
-									<p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
-								</div>
-								<div class="reviews-btn"><a href="#" class="btn btn-black">Подробнее</a></div>
-							</div>
-						</li>
-
-						<li class="reviews-item" style="background-image:url(img/reviews/6.jpg);">
-							<div class="reviews-item-hover">
-								<div class="reviews-title">Константин Спилберг</div>
-								<div class="reviews-text">
-									<p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
-								</div>
-								<div class="reviews-btn"><a href="#" class="btn btn-black">Подробнее</a></div>
-							</div>
-						</li>
-
-						<li class="reviews-item" style="background-image:url(img/reviews/7.jpg);">
-							<div class="reviews-item-hover">
-								<div class="reviews-title">Константин Спилберг</div>
-								<div class="reviews-text">
-									<p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
-								</div>
-								<div class="reviews-btn"><a href="#" class="btn btn-black">Подробнее</a></div>
-							</div>
-						</li>
-
-						<li class="reviews-item" style="background-image:url(img/reviews/8.jpg);">
-							<div class="reviews-item-hover">
-								<div class="reviews-title">Константин Спилберг</div>
-								<div class="reviews-text">
-									<p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
-								</div>
-								<div class="reviews-btn"><a href="#" class="btn btn-black">Подробнее</a></div>
-							</div>
 						</li>
 					</ul>
-				</section>
+				</div>
+			</section>
 
-			</div>
+			<section class="section team" id="team">
+				<div class="right-section">
+					<div class="section-title section-title_yellow">Команда</div>
+
+					<div class="accordion">
+
+						<div class="accordion-item">
+							<div class="accordion-head">
+								<div class="icon"></div>
+								<div class="title">Дэниэл Редклиф</div>
+							</div>
+							<div class="accordion-content">
+								<div class="accordion-content-img" style="background-image: url(img/team-person.jpg);"></div>
+								<div class="accordion-content-desc">
+									<p class="position">Оператор</p>
+									<p>
+										С радостью поможет подобрать идеальный бургер и оформить заказ.
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="accordion-item">
+							<div class="accordion-head">
+								<div class="icon"></div>
+								<div class="title">Ричард Джеймс</div>
+							</div>
+							<div class="accordion-content">
+								<div class="accordion-content-img" style="background-image: url(img/team-person.jpg);"></div>
+								<div class="accordion-content-desc">
+									<p class="position">Оператор</p>
+									<p>
+										С радостью поможет подобрать идеальный бургер и оформить заказ.
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="accordion-item">
+							<div class="accordion-head">
+								<div class="icon"></div>
+								<div class="title">Джейк Финн</div>
+							</div>
+							<div class="accordion-content">
+								<div class="accordion-content-img" style="background-image: url(img/team-person.jpg);"></div>
+								<div class="accordion-content-desc">
+									<p class="position">Оператор</p>
+									<p>
+										С радостью поможет подобрать идеальный бургер и оформить заказ.
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="accordion-item">
+							<div class="accordion-head">
+								<div class="icon"></div>
+								<div class="title">Николай Иванов</div>
+							</div>
+							<div class="accordion-content">
+								<div class="accordion-content-img" style="background-image: url(img/team-person.jpg);"></div>
+								<div class="accordion-content-desc">
+									<p class="position">Оператор</p>
+									<p>
+										С радостью поможет подобрать идеальный бургер и оформить заказ.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section menu" id="menu">
+				<div class="section-title section-title_white">Меню</div>
+
+					<div class="vertical-accordion">
+
+						<div class="vertical-accordion-item">
+							<div class="vertical-accordion-head" style="background-image: url(img/va1-bg.jpg);">
+								<div class="vertical-accordion-title">Для мясоедов</div>
+							</div>
+							<div class="vertical-accordion-content vertical-accordion-content_active">
+								<div class="accordion-content-desc">
+									<p>
+										Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову, однако механизм сочленений неустойчив. Модальность высказывания, как справедливо считает И.Гальперин, пространственно выбирает метр.
+										Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову.
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="vertical-accordion-item">
+								<div class="vertical-accordion-head" style="background-image: url(img/va2-bg.jpg);">
+									<div class="vertical-accordion-title">Для мясоедов</div>
+								</div>
+								<div class="vertical-accordion-content">
+									<div class="accordion-content-desc">
+										<p>
+											Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову, однако механизм сочленений неустойчив. Модальность высказывания, как справедливо считает И.Гальперин, пространственно выбирает метр.
+											Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову.
+										</p>
+									</div>
+								</div>
+						</div>
+
+						<div class="vertical-accordion-item">
+								<div class="vertical-accordion-head" style="background-image: url(img/va3-bg.jpg);">
+									<div class="vertical-accordion-title">Диетическое</div>
+								</div>
+								<div class="vertical-accordion-content">
+									<div class="accordion-content-desc">
+										<p>
+											Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову, однако механизм сочленений неустойчив. Модальность высказывания, как справедливо считает И.Гальперин, пространственно выбирает метр.
+											Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову.
+										</p>
+									</div>
+								</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section reviews" id="reviews">
+				<ul class="reviews-items">
+					<li class="reviews-item" style="background-image:url(img/reviews/1.jpg);">
+						<div class="reviews-item-hover">
+							<div class="reviews-title">Константин Спилберг</div>
+							<div class="reviews-text">
+								<p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки
+									могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
+							</div>
+							<div class="reviews-btn"><a href="#" class="btn btn-black">Подробнее</a></div>
+						</div>
+					</li>
+
+					<li class="reviews-item" style="background-image:url(img/reviews/2.jpg);">
+						<div class="reviews-item-hover">
+							<div class="reviews-title">Константин Спилберг</div>
+							<div class="reviews-text">
+								<p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки
+									могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
+							</div>
+							<div class="reviews-btn"><a href="#" class="btn btn-black">Подробнее</a></div>
+						</div>
+					</li>
+
+					<li class="reviews-item" style="background-image:url(img/reviews/3.jpg);">
+						<div class="reviews-item-hover">
+							<div class="reviews-title">Константин Спилберг</div>
+							<div class="reviews-text">
+								<p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки
+									могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
+							</div>
+							<div class="reviews-btn"><a href="#" class="btn btn-black">Подробнее</a></div>
+						</div>
+					</li>
+
+					<li class="reviews-item" style="background-image:url(img/reviews/4.jpg);">
+						<div class="reviews-item-hover">
+							<div class="reviews-title">Константин Спилберг</div>
+							<div class="reviews-text">
+								<p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки
+									могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
+							</div>
+							<div class="reviews-btn"><a href="#" class="btn btn-black">Подробнее</a></div>
+						</div>
+					</li>
+
+					<li class="reviews-item" style="background-image:url(img/reviews/5.jpg);">
+						<div class="reviews-item-hover">
+							<div class="reviews-title">Константин Спилберг</div>
+							<div class="reviews-text">
+								<p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки
+									могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
+							</div>
+							<div class="reviews-btn"><a href="#" class="btn btn-black">Подробнее</a></div>
+						</div>
+					</li>
+
+					<li class="reviews-item" style="background-image:url(img/reviews/6.jpg);">
+						<div class="reviews-item-hover">
+							<div class="reviews-title">Константин Спилберг</div>
+							<div class="reviews-text">
+								<p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки
+									могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
+							</div>
+							<div class="reviews-btn"><a href="#" class="btn btn-black">Подробнее</a></div>
+						</div>
+					</li>
+
+					<li class="reviews-item" style="background-image:url(img/reviews/7.jpg);">
+						<div class="reviews-item-hover">
+							<div class="reviews-title">Константин Спилберг</div>
+							<div class="reviews-text">
+								<p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки
+									могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
+							</div>
+							<div class="reviews-btn"><a href="#" class="btn btn-black">Подробнее</a></div>
+						</div>
+					</li>
+
+					<li class="reviews-item" style="background-image:url(img/reviews/8.jpg);">
+						<div class="reviews-item-hover">
+							<div class="reviews-title">Константин Спилберг</div>
+							<div class="reviews-text">
+								<p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки
+									могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
+							</div>
+							<div class="reviews-btn"><a href="#" class="btn btn-black">Подробнее</a></div>
+						</div>
+					</li>
+				</ul>
+			</section>
 
 		</div>
 
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+	</div>
 
-<script type="text/javascript">
-$(document).ready(function(){
-    $("#header__nav").on("click","a", function (event) {
-        event.preventDefault();
-        var id  = $(this).attr('href'),
-            top = $(id).offset().top;
-        $('body,html').animate({scrollTop: top}, 1000);
-    });
-});
-$(document).ready(function(){
-	$("#fixed-menu").on("click","a", function (event) {
-	    event.preventDefault();
-	    var id  = $(this).attr('href'),
-	        top = $(id).offset().top;
-	    $('body,html').animate({scrollTop: top}, 1000);
-	});
-});
-</script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 
-<script>
-var acc = document.getElementsByClassName("accordion-head");
-var i;
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$("#header__nav").on("click", "a", function (event) {
+				event.preventDefault();
+				var id = $(this).attr('href'),
+					top = $(id).offset().top;
+				$('body,html').animate({ scrollTop: top }, 1000);
+			});
+		});
+		$(document).ready(function () {
+			$("#fixed-menu").on("click", "a", function (event) {
+				event.preventDefault();
+				var id = $(this).attr('href'),
+					top = $(id).offset().top;
+				$('body,html').animate({ scrollTop: top }, 1000);
+			});
+		});
+	</script>
 
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("accordion-head_active");
-    var panel = this.nextElementSibling;
-    if (panel.style.display){
-      panel.style.display = null;
-    } else {
-      panel.style.display = "flex";
-    } 
-  });
-}
-</script>
+	<script>
+		var acc = document.getElementsByClassName("accordion-head");
+		var i;
 
-	</body>
+		for (i = 0; i < acc.length; i++) {
+			acc[i].addEventListener("click", function () {
+				this.classList.toggle("accordion-head_active");
+				var panel = this.nextElementSibling;
+				if (panel.style.display) {
+					panel.style.display = null;
+				} else {
+					panel.style.display = "flex";
+				}
+			});
+		}
+	</script>
+
+</body>
+
 </html>
