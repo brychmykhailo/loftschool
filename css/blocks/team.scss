@@ -29,14 +29,19 @@
 	cursor: pointer;
 	text-decoration: none;
 	text-transform: uppercase;
+	position: relative;
 
 	&:before {
 		content: '';
 		border: 6px solid transparent;	
 		border-top: 6px solid $yellow;
-		float: left;
-		margin-right: 7px;
-    	margin-top: 7px;
+    	transition: 0.3s;
+    	float: left;
+    	width: 0px;
+    	height: 0px;
+    	position: absolute;
+    	top: 8px;
+    	left:-20px;
 	}
 
 	&_active {
@@ -44,9 +49,8 @@
 	}
 
 	&_active:before {
-		border: 6px solid transparent;
-		border-bottom: 6px solid $yellow;
-		border-top: 0;
+		top: 2px;
+		transform: rotate(180deg);
 }
 }
 
