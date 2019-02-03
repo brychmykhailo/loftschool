@@ -4,12 +4,20 @@
 		align-items: center;
 		width: 100%;
 		padding-top:12px;
+		@include ubuntu(medium);
 	}
 
 .header__logo img {
 		max-width: 92px;
 	}
 
+.header__menu {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	font-size: 13px;
+	line-height: 1;
+}
 .header__nav {
 		text-transform: uppercase;
 
@@ -20,14 +28,10 @@
 			  display: flex; 
 
 			a {
-				font-size: 13px;
-				line-height: 30px;
 				letter-spacing: 0px;
-				font-family: 'Ubuntu';
-				font-weight: 500;
 			}
 
-			li:before {
+			li:after {
 			content: "•";
 			font-size: 13px;
 			padding: 0 15px 0 15px;
@@ -35,10 +39,9 @@
 			font-weight: 100;
 			} 
 
-			li:first-child::before, li:last-child::before {
-			content: "";
-			padding: 0;
-			padding-left:16px;
+			li:last-child:after {
+				content: "";
+				padding: 0 15px 0 0;
 			}
 		}
 

@@ -32,6 +32,8 @@
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
+	color: $white;
+	cursor: pointer;
 
 	&:before {
 		content: '';
@@ -42,12 +44,18 @@
 		background-color: rgba(#141414, 0.7);
 	}
 
+	&_active {
+		color: $yellow;
+	}
+
+	&:hover {
+		color: $yellow;
+	}
 }
 
 .vertical-accordion-title {
 	font-size: 40px;
 	@include gagalin();
-	color: $white;
 	width: 100%;
 	writing-mode: vertical-lr;
 	transform: rotate(180deg);
@@ -63,9 +71,4 @@
 	font-size: 14px;
 	@include ubuntu();
 	line-height: 24px;
-
-	&_active {
-		width: 550px;
-		display: block;
-	}
 }

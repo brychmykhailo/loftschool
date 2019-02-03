@@ -1,0 +1,88 @@
+.footer {
+	width: 100%;
+	display: flex;
+	background: url('../img/footer-bg.jpg') no-repeat center;
+	background-size: cover;
+	position: absolute;
+	bottom: 0;
+	margin: 0 auto;
+}
+
+.footer__container {
+	height: 63px;
+	margin: 0 auto;
+	width: 940px;
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.footer__left {
+	width: 50%;
+	color: $white;
+	font-size: 14px;
+	line-height: 24px;
+	@include ubuntu();
+
+	span {
+		display: block;
+	}
+
+	a {
+		text-decoration: none;
+	}
+}
+
+.footer__adress {
+	font-weight: 500;
+}
+.footer__phone {
+	font-weight: 700;
+	color: $red;
+
+	.phone-icon {
+		position: relative;
+		float: left;
+		width: 15px;
+		height: 15px;
+		top: 4px;
+		margin-right: 6px;
+		transition: 0.6s;
+	}
+
+	&:hover .phone-icon{
+		transform: rotate(25deg);
+		transition: 0.6s;
+	}
+}
+
+.footer__right {
+	width: 50%;
+}
+
+.social__nav-items {
+
+list-style: none;
+margin: 0;
+padding: 0;
+display: flex;
+justify-content: flex-end;
+
+}
+
+.social__nav-item {
+
+	margin-left: 19px;
+
+	svg{
+		fill: #585858;
+		width: 21px;
+		height: 21px;
+		transition: 0.2s ease-in-out;
+
+		&:hover {
+			fill: $white;
+		}
+	}
+}

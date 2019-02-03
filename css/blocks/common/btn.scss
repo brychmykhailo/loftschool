@@ -1,14 +1,24 @@
 .btn {
+	color: $white;
+	text-transform: uppercase;
+	transition: 0.3s ease-in-out;
+	font-weight: 600;
+	border: none;
 	margin:0;
 	border-radius: 5px;
 	padding: 11px 16px;
+	height: 35px;
+	font-size: 14px;
+	line-height: 1;
 	text-decoration: none;
 
 	&-red {
 	background: $red;
+	transition: 0.3s ease-in-out;
 
 		&:hover{
 		background: $red-hover;
+		transition: 0.3s ease-in-out;
 		}
 
 	}
@@ -16,11 +26,26 @@
 	&-black {
 	background: $black;
 	color:$white;
+	transition: 0.3s ease-in-out;
 
 		&:hover{
 		background: $black-hover;
+		transition: 0.3s ease-in-out;
 		}
 		
+	}
+
+	&-transparent {
+	background: transparent;
+	color:$white;
+	text-transform: none;
+	transition: 0.3s ease-in-out;
+
+	&:hover{
+		background: #ffffff0c;
+		transition: 0.3s ease-in-out;
+		}
+
 	}
 
 }
