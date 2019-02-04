@@ -6,33 +6,70 @@
 .we-best__info {
 		display:flex;
 		justify-content: flex-start;
+		width: 100%;
+
+		@include phones() {
+			flex-wrap: wrap;
+		}
+		
 }
 
 .we-best__info-block {
 			display:flex;
 			flex-direction: column;
 			justify-content: flex-start;
-			padding:10px;
-			flex: 1;
+			padding:rem(10px);
 			margin: 0 auto;
 			text-align: center;
+			width: 33%;
+			
+			@include tablets() {
+				text-align: center;
+				width: 100%;
+			}
+
+			@include phones() {
+				padding-top: rem(20px);
+				flex-direction: row;
+			}
 }
 
 .we-best__info-block-icon, .meat-icon, .hand-icon, .natural-icon {
-	height: 89px;
+	height: rem(89px);
+}
+
+.we-best__info-block-icon {
+	@include phones() {
+		text-align: left;
+		width: 30%;
+	}
+}
+.we-best__info-block-desc {
+	@include phones() {
+		text-align: left;
+		width: 68%;
+	}
+}
+
+.we-best__info-block-icon svg {
+	width: 100%;
 }
 
 .we-best__info-block-title {
 	@include lifehack();
-	padding-top: 30px;
-	font-size:24px;
-	line-height: 28px;
+	padding-top: rem(30px);
+	font-size:rem(24px);
+	line-height: rem(28px);
 	color:$black;
+
+	@include phones() {
+		padding-top: 0;
+	}
 }
 
 .we-best__info-block-subtitle {
-	padding-top: 14px;
+	padding-top: rem(14px);
 	@include ubuntu(light);
-	font-size:14px;
-	line-height: 24px;
+	font-size:rem(14px);
+	line-height: rem(24px);
 }

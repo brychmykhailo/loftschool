@@ -1,10 +1,22 @@
+html {
+  font-size: 16px;
+
+  @include tablets() {
+    font-size: 14px;
+  }
+
+  @include phones() {
+    font-size: 13px;
+  }
+}
+
 html,
 body {
   height: 100%;
 }
 
+
 body {
-  font-size: 16px;
   line-height: 1.42;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -15,8 +27,8 @@ body {
 
 .wrapper {
   position: relative;
-  // width: 100%;
-  // min-width: 960px;
+  width: 100%;
+  // min-width: rem(960px);
   min-height: 100%;
   overflow: hidden;
 }
@@ -24,14 +36,14 @@ body {
 .section {
   height:100vh;
   width: 100%;
-  min-height: 650px;
+  min-height: rem(650px);
   display: flex;
 }
 
 .container {
   margin: 0 auto;
   position: relative;
-  width: 940px;
+  max-width: 95%;
   display: flex;
 
   &-center {
@@ -44,26 +56,6 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-  }
-}
-
-.section-title {
-  font-size: 72px;
-  @include gagalin();
-  color: $yellow;
-  margin-bottom: 40px;
-
-  &_color {
-    &_black {
-      color: $black;
-    }
-
-  }
-
-  &_position {
-    &_center {
-      text-align: center;
-    }
   }
 }
 
@@ -101,5 +93,5 @@ footer {
 }
 
 p {
-  margin-bottom: 20px;
+  margin-bottom: rem(20px);
 }

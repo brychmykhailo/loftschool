@@ -1,0 +1,66 @@
+$buttonWidth: 30px;
+$buttonHeight: 26px;
+$buttonColor: darken($white, 15%);
+$lineThickness: 4px;
+$transitionSpeed: .25s;
+$transitionEasing: ease-in-out;
+
+// Demo
+.menutoggle {
+  position: relative;
+  display: none;
+  width: $buttonWidth;
+  height: $buttonHeight;
+  background: transparent;
+  border-top: $lineThickness solid;
+  border-bottom: $lineThickness solid;
+  color: $buttonColor;
+  font-size: 0;
+  margin-left: rem(35px);
+  transition: all $transitionSpeed $transitionEasing;
+
+  &:before,
+  &:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: $lineThickness;
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    
+    background: currentColor;
+    
+    transform: translate(-50%, -50%);
+    transition: transform $transitionSpeed $transitionEasing;
+  } 
+  @include tablets()
+  {
+      display: block;
+}
+}
+
+button:hover {
+  color: lighten($buttonColor, 15%);
+}
+
+button.is-active {
+  border-color: transparent;
+
+  &:before {
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+
+  &:after {
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+}
+
+// Page setup
+
+
+button {
+  outline: none;
+  border: none;
+}

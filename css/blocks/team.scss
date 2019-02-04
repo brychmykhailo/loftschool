@@ -1,84 +1,97 @@
 .team {
-	background: url('../img/team.jpg') no-repeat center;
-	background-size: cover;
-	display:flex;
-	justify-content: flex-end;
-	height: 100vh;
-	width: 100%;
+    background: url('../img/team.jpg') no-repeat center;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+    height: 100vh;
+    width: 100%;
 }
 
-.team .right-section
-{
-	width: 49%;
-	height: 100%;
-	padding: 110px 100px;
-	background-color: rgba(47, 50, 52, 0.93);
+.team .right-section {
+    width: 49%;
+    height: 100%;
+    padding: rem(110px) rem(100px);
+    background-color: rgba(47, 50, 52, 0.93);
+    @include tablets () {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        text-align: center;
+    }
 }
 
-.accordion {
-
-}
+.accordion {}
 
 .accordion-item {
-	padding: 30px 0px 0px 0px;
+    padding: rem(30px) rem(0px) rem(0px) rem(0px);
 }
 
 .accordion-head {
-	color: $white;
-	@include gagalin();
-	font-size: 14px;
-	cursor: pointer;
-	text-decoration: none;
-	text-transform: uppercase;
-	position: relative;
-
-	&:before {
-		content: '';
-		border: 6px solid transparent;	
-		border-top: 6px solid $yellow;
-    	transition: 0.3s;
-    	float: left;
-    	width: 0px;
-    	height: 0px;
-    	position: absolute;
-    	top: 8px;
-    	left:-20px;
-	}
-
-	&_active {
-		color: $yellow;
-	}
-
-	&_active:before {
-		top: 2px;
-		transform: rotate(180deg);
+    color: $white;
+    @include gagalin();
+    font-size: rem(14px);
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: uppercase;
+    position: relative;
+    &:before {
+        content: '';
+        border: rem(6px) solid transparent;
+        border-top: rem(6px) solid $yellow;
+        transition: 0.3s;
+        float: left;
+        width: rem(0px);
+        height: rem(0px);
+        position: absolute;
+        top: rem(8px);
+        left: rem(-20px);
+    }
+    &_active {
+        color: $yellow;
+    }
+    &_active:before {
+        top: rem(2px);
+        transform: rotate(180deg);
+    }
+    @include tablets () {
+        text-align: center;
+        display: inline-flex;
+    }
 }
-}
-
 
 .accordion-content {
-	padding: 20px 0px 0px 20px;
-	display: none;
-  	overflow: hidden;
-  	transition: max-height 0.2s ease-out;
+    padding: rem(20px) rem(0px) rem(0px) rem(20px);
+    display: none;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    @include tablets () {
+        flex-direction: column;
+        text-align: center;
+        margin: 0 auto;
+        padding: 0;
+    }
 }
 
 .accordion-content-img {
-	width: 100px;
-	height: 100px;
-	border-radius: 50%;
-	background-position: center;
-	background-size: cover;
-	flex-shrink: 0;
+    width: rem(100px);
+    height: rem(100px);
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+    flex-shrink: 0;
+    @include tablets () {
+        margin: rem(15px) auto;
+    }
 }
 
 .accordion-content-desc {
-	padding: 0px 20px 0px 20px;
-	color: $white;
-	@include ubuntu();
+    padding: rem(0px) rem(20px) rem(0px) rem(20px);
+    color: $white;
+    @include ubuntu();
 }
 
 p.position {
-	margin: 0px 0px 20px 0px;
-	font-weight: bold;
+    margin: rem(0px) rem(0px) rem(20px) rem(0px);
+    font-weight: bold;
 }

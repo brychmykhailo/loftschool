@@ -7,6 +7,26 @@ $black: #2f3234;
 $black-hover:#1f2122;
 $orange: #e45028;
 
+//breackpoints
+$tablets: 768px;
+$phones: 480px;
+
+@function rem($px) {
+    @return $px / 16px+0rem;
+}
+
+@mixin tablets() {
+    @media screen and (max-width: $tablets) {
+        @content;
+    }
+}
+
+@mixin phones() {
+    @media screen and (max-width: $phones) {
+        @content;
+    }
+}
+
 //normalize
 @import "_misc/normalize.scss";
 
@@ -19,6 +39,7 @@ $orange: #e45028;
 @import "blocks/common/btn.scss";
 @import "blocks/common/section-title.scss";
 @import "blocks/common/fixed-menu.scss";
+@import "blocks/common/menutoggle.scss";
 
 //blocks
 @import "blocks/header.scss";
@@ -30,3 +51,4 @@ $orange: #e45028;
 @import "blocks/delivery.scss";
 @import "blocks/contacts.scss";
 @import "blocks/footer.scss";
+

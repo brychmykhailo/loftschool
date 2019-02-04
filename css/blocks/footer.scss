@@ -9,29 +9,41 @@
 }
 
 .footer__container {
-	height: 63px;
+	height: rem(63px);
 	margin: 0 auto;
-	width: 940px;
+	width: rem(940px);
+	padding: 0 rem(30px) 0 rem(30px);
 	position: relative;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+
+	@include phones () {
+		flex-direction: column;
+		text-align: center;
+		margin: 0 auto;
+		height: initial;
+		padding: rem(20px)
+    }
 }
 
 .footer__left {
 	width: 50%;
 	color: $white;
-	font-size: 14px;
-	line-height: 24px;
+	font-size: rem(14px);
+	line-height: rem(24px);
 	@include ubuntu();
 
-	span {
-		display: block;
-	}
 
 	a {
 		text-decoration: none;
 	}
+	@include tablets () {
+		width: 60%;
+    }
+	@include phones () {
+		width: 100%;
+    }
 }
 
 .footer__adress {
@@ -41,13 +53,17 @@
 	font-weight: 700;
 	color: $red;
 
+	a {
+		color: $red;
+	}
+
 	.phone-icon {
 		position: relative;
 		float: left;
-		width: 15px;
-		height: 15px;
-		top: 4px;
-		margin-right: 6px;
+		width: rem(15px);
+		height: rem(15px);
+		top: rem(4px);
+		margin-right: rem(6px);
 		transition: 0.6s;
 	}
 
@@ -55,10 +71,21 @@
 		transform: rotate(25deg);
 		transition: 0.6s;
 	}
+
+	@include phones () {
+		display: inline-flex;
+    }
 }
 
 .footer__right {
 	width: 50%;
+
+	@include tablets () {
+		width: 40%;
+    }
+	@include phones () {
+		width: 100%;
+    }
 }
 
 .social__nav-items {
@@ -69,16 +96,21 @@ padding: 0;
 display: flex;
 justify-content: flex-end;
 
+@include phones () {
+	margin-top: rem(20px);
+	justify-content: center;
+}
+
 }
 
 .social__nav-item {
 
-	margin-left: 19px;
+	margin-left: rem(19px);
 
 	svg{
 		fill: #585858;
-		width: 21px;
-		height: 21px;
+		width: rem(21px);
+		height: rem(21px);
 		transition: 0.2s ease-in-out;
 
 		&:hover {

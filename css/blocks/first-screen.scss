@@ -2,6 +2,7 @@
 	background: url('../img/first-item-bg-overlay.png') no-repeat center, 
                 url('../img/first-item-bg.jpg') no-repeat center;
     background-size: cover, cover;
+}
 
 .first-screen__content {
 		width: 100%;
@@ -9,16 +10,17 @@
 		justify-content: space-around;
 		align-items: center;
 		flex-wrap: nowrap;
-		flex-grow: 1;
-	}
+
+		@include tablets () {
+			flex-direction: column;
+		}
+}
+
 
 .first-screen__burger {
 		background: url('../img/drops.png') top no-repeat;
 		background-size: contain;
 		width: 50%;
-		display: flex;
-    	justify-content: center;
-    	overflow: visible;
 		animation: top 3s infinite ease-in-out;
     	@keyframes top {
 		    0% {
@@ -36,29 +38,41 @@
 		}
 
  		img {
- 			margin-top:-40px;
- 		}
-	}
+			 margin-top:rem(-40px);
+			 width: 100%;
+		 }
+		 @include tablets () {
+			text-align: center;
+			width: 50%;
+		}
+}
 
 .first-screen__info {
 		width: 50%;
-		padding: 0px 10px;
-	}
+		padding: rem(0px) rem(10px);
+		@include tablets () {
+			text-align: center;
+			width: 100%;
+		}
 }
 
 .first-screen__desc {
 	@include lifehack();
- 	font-size: 65px;
- 	line-height: 60px;
+ 	font-size: rem(65px);
+ 	line-height: rem(60px);
 	font-weight: 500;
-	letter-spacing: -1.5px;
+	letter-spacing: rem(-1.5px);
 	color:$white;
+	@include tablets () {
+		font-size: 3.4rem;
+	}
 }
 
 .first-screen__arrow {
- padding-bottom: 40px;
+ padding-bottom: rem(40px);
 }
+
 .arrow-scroll-icon {
-	width: 30px;
-	height: 30px;
+	width: rem(30px);
+	height: rem(30px);
 }
