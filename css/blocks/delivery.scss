@@ -7,12 +7,20 @@
 .delivery__form {
     display: flex;
     width: 940px;
+    justify-content: center;
+    align-items: flex-start;
 
-    @include tablets () {
+    @include tablets() {
         flex-direction: column;
-        width: 94%;
+        justify-content: center;
+        align-items: center;
+        width: 62%;
         margin: 0 auto;
-        margin-left: 20px;
+    }
+    
+    @include phones() {
+        width: 99%;
+        margin-left: 4px;
 	}
 }
 
@@ -38,8 +46,21 @@
     align-content: flex-start;
 
     @include tablets () {
-        width: 100%
-	}
+        width: 100%;
+    }
+    
+    @include phones() {
+        justify-content: center;
+    }
+}
+
+.delivery__form-right-oplata {
+    display: flex;
+    width: 100%;
+
+    @include phones() {
+        justify-content: center;
+    }
 }
 
 .delivery__label {
@@ -52,12 +73,26 @@
     margin-top: rem(20px);
     &-1x {
         width: calc( 100% - 20px);
+
+        @include phones() {
+            width: calc( 100% - 5px);
+        }
     }
     &-2x {
         width: calc( 50% - 20px);
+
+        @include phones() {
+            width: calc( 50% - 5px);
+        }
+
     }
     &-4x {
         width: calc( 25% - 20px);
+
+        @include phones() {
+            width: calc( 33% - 5px);
+        }
+
     }
     input {
         padding: rem(5px);
@@ -71,6 +106,10 @@
         margin-top: rem(10px);
         border-radius: rem(5px);
         resize: none;
+    }
+
+    @include phones() {
+        margin-right: 5px;
     }
 }
 
@@ -127,7 +166,6 @@
 
 .delivery__checkbox {
     color: $white;
-    width: 100%;
     display: flex;
     font-size: rem(14px);
     font-weight: 400;
@@ -178,4 +216,14 @@
     .btn {
         margin-right: rem(15px);
     }
+
+    @include phones() {
+        justify-content: center;
+    }
+}
+
+#etaz-label {
+    @include phones () {
+        display: none;
+	}
 }

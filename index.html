@@ -54,7 +54,7 @@
 									<li><a href="#contacts" class="header__nav-item">Контакты</a></li>
 								</ul>
 							</nav>
-							<a href="#form" class="btn btn-red">Заказать</a>
+							<a href="#delivery" class="btn btn-red">Заказать</a>
 							<button class="menutoggle">Меню</button>
 							<nav class="header__mobile__nav" id="header__mobile__nav"></nav>
 						</div>
@@ -273,6 +273,7 @@
 									могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
 							</div>
 							<div class="reviews-btn"><a href="#" class="btn btn-black">Подробнее</a></div>
+							<div class="reviews-btn-mob"><a href="#" class="btn btn-black">Читать отзыв</a></div>
 						</div>
 					</li>
 
@@ -284,6 +285,7 @@
 									могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
 							</div>
 							<div class="reviews-btn"><a href="#" class="btn btn-black">Подробнее</a></div>
+							<div class="reviews-btn-mob"><a href="#" class="btn btn-black">Читать отзыв</a></div>
 						</div>
 					</li>
 
@@ -295,6 +297,7 @@
 									могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
 							</div>
 							<div class="reviews-btn"><a href="#" class="btn btn-black">Подробнее</a></div>
+							<div class="reviews-btn-mob"><a href="#" class="btn btn-black">Читать отзыв</a></div>
 						</div>
 					</li>
 
@@ -306,6 +309,7 @@
 									могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
 							</div>
 							<div class="reviews-btn"><a href="#" class="btn btn-black">Подробнее</a></div>
+							<div class="reviews-btn-mob"><a href="#" class="btn btn-black">Читать отзыв</a></div>
 						</div>
 					</li>
 
@@ -317,6 +321,7 @@
 									могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
 							</div>
 							<div class="reviews-btn"><a href="#" class="btn btn-black">Подробнее</a></div>
+							<div class="reviews-btn-mob"><a href="#" class="btn btn-black">Читать отзыв</a></div>
 						</div>
 					</li>
 
@@ -328,6 +333,7 @@
 									могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
 							</div>
 							<div class="reviews-btn"><a href="#" class="btn btn-black">Подробнее</a></div>
+							<div class="reviews-btn-mob"><a href="#" class="btn btn-black">Читать отзыв</a></div>
 						</div>
 					</li>
 
@@ -339,6 +345,7 @@
 									могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
 							</div>
 							<div class="reviews-btn"><a href="#" class="btn btn-black">Подробнее</a></div>
+							<div class="reviews-btn-mob"><a href="#" class="btn btn-black">Читать отзыв</a></div>
 						</div>
 					</li>
 
@@ -350,6 +357,7 @@
 									могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
 							</div>
 							<div class="reviews-btn"><a href="#" class="btn btn-black">Подробнее</a></div>
+							<div class="reviews-btn-mob"><a href="#" class="btn btn-black">Читать отзыв</a></div>
 						</div>
 					</li>
 				</ul>
@@ -379,7 +387,7 @@
 								<label class="delivery__label delivery__label-4x" for="kva">Квартира
 									<input type="text" class="input" id="kva"></label>
 
-								<label class="delivery__label delivery__label-4x" for="etaz">Этаж
+								<label class="delivery__label delivery__label-4x" for="etaz" id="etaz-label">Этаж
 									<input type="text" class="input" id="etaz"></label>
 
 
@@ -390,15 +398,17 @@
 									<textarea class="textarea" id="message"></textarea>
 								</label>
 
-								<label class="delivery__radio" for="sdacha">
-									<input type="radio" name="oplata" id="sdacha" value="sdacha">
-									<div class="delivery__radio__text">Потребуется сдача</div>
-								</label>
-
-								<label class="delivery__radio" for="karta">
-									<input type="radio" name="oplata" id="karta" value="karta">
-									<div class="delivery__radio__text">Оплата картой</div>
-								</label>
+								<div class="delivery__form-right-oplata">
+									<label class="delivery__radio" for="sdacha">
+										<input type="radio" name="oplata" id="sdacha" value="sdacha">
+										<div class="delivery__radio__text">Потребуется сдача</div>
+									</label>
+	
+									<label class="delivery__radio" for="karta">
+										<input type="radio" name="oplata" id="karta" value="karta">
+										<div class="delivery__radio__text">Оплата картой</div>
+									</label>
+								</div>
 
 								<label class="delivery__checkbox" for="nocall">
 									<input type="checkbox" id="nocall" value="nocall">

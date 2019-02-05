@@ -37,10 +37,18 @@
 	background-color: rgba(#000, .5);
 	opacity:0;
 	transition: opacity .3s;
+    display: flex;
+    flex-direction: column;
+	align-items: left;
+	justify-content: space-around;
 
 	@include tablets () {
+		align-items: center;
 		text-align: center;
+		padding:rem(20px) rem(10px);
+		font-size: rem(13px);
 	}
+
 
 	&:hover{
 		opacity:1;
@@ -52,4 +60,29 @@
 	@include gagalin();
 	font-size:rem(14px);
 	line-height:rem(28px);
+
+	@include phones () {
+		font-size:rem(24px);
+	}
+}
+
+.reviews-text {
+	@include phones () {
+		display: none;
+	}
+}
+.reviews-btn {
+	display: inline-flex;
+
+	@include phones () {
+		display: none;
+	}
+}
+
+.reviews-btn-mob {
+	display: none;
+
+	@include phones () {
+		display: inline-flex;
+	}
 }
