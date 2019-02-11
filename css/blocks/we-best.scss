@@ -6,7 +6,7 @@
 .we-best__info {
 		display:flex;
 		justify-content: flex-start;
-		width: 100%;
+		max-width: 87%;
 
 		@include phones() {
 			flex-wrap: wrap;

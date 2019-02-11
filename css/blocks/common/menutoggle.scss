@@ -5,7 +5,6 @@ $lineThickness: 4px;
 $transitionSpeed: .25s;
 $transitionEasing: ease-in-out;
 
-// Demo
 .menutoggle {
   position: relative;
   display: none;
@@ -38,7 +37,7 @@ $transitionEasing: ease-in-out;
   @include tablets()
   {
       display: block;
-}
+  }
 }
 
 button:hover {
@@ -46,6 +45,7 @@ button:hover {
 }
 
 button.is-active {
+  display: block;
   border-color: transparent;
 
   &:before {
@@ -56,9 +56,6 @@ button.is-active {
     transform: translate(-50%, -50%) rotate(-45deg);
   }
 }
-
-// Page setup
-
 
 button {
   outline: none;

@@ -8,24 +8,7 @@ $black-hover:#1f2122;
 $orange: #e45028;
 
 //breackpoints
-$tablets: 768px;
-$phones: 480px;
-
-@function rem($px) {
-    @return $px / 16px+0rem;
-}
-
-@mixin tablets() {
-    @media screen and (max-width: $tablets) {
-        @content;
-    }
-}
-
-@mixin phones() {
-    @media screen and (max-width: $phones) {
-        @content;
-    }
-}
+@import "_misc/breackpoints.scss";
 
 //normalize
 @import "_misc/normalize.scss";
@@ -50,5 +33,8 @@ $phones: 480px;
 @import "blocks/menu.scss";
 @import "blocks/delivery.scss";
 @import "blocks/contacts.scss";
+@import "blocks/burgers.scss";
 @import "blocks/footer.scss";
+@import "blocks/fullscreenmenu.scss";
+
 

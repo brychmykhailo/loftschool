@@ -1,0 +1,215 @@
+.burgers {
+	background-image: linear-gradient(rgb(249,180,59) 0%, rgb(235,140,56) 48%, rgb(249,180,59) 74%); 
+}
+
+.burgers__slider {
+	max-width: 87%;
+
+	@include tablets() {
+		max-width: 70%;
+	}
+
+
+	@include phones() {
+		max-width: 95%;
+	}
+	
+}
+.burgers__slider__item {
+	position: relative;
+}
+
+.burgers__slider__comp {
+	position: absolute; 
+	display: flex;
+	justify-content: flex-start;
+	top:rem(-60px);
+	left:0;
+}
+
+.burgers__slider__comp-icon {
+	display: block;
+	width: rem(90px);
+	height: rem(90px);
+	background-color: #f08c33;
+	color: $white;
+	border-radius: 5px;
+	text-align: center; 
+	padding: rem(15px) rem(20px);
+	@include gagalin();
+	font-size: rem(14px);
+	cursor: pointer;
+
+	svg {
+		max-width: rem(45px);
+		max-height: rem(40px);
+	}
+
+	&:hover {
+		background-color: $orange;
+	}
+}
+
+.burgers__slider__comp-values {
+	display:none;
+	border-radius: 5px;
+	background-color: rgb(255, 255, 255);
+	opacity: 0.902;
+	min-width: rem(270px);
+	min-height: rem(332px);
+	flex-direction: column;
+	padding: rem(20px);
+
+	&-active {
+		display: flex;
+	}
+  }
+
+  .burgers__slider__comp-value {
+	  display: flex;
+	  align-items: center;
+	  justify-content: center;
+	justify-content: space-between;
+	font-size: rem(14px);
+
+	&-img {
+		width: 25%;
+		margin: 0 auto;
+		text-align: center;
+
+		svg {
+			max-width: rem(42px);
+			max-height: rem(42px);
+		}
+	}
+
+	&-text {
+		text-align: left;
+		width: 55%;
+		font-weight: 400;
+		padding-left: rem(20px);
+	}
+
+	&-value {
+		width: 20%;
+		text-align: right;
+	}
+  }
+  
+
+.burgers__slider__kal {
+	position: absolute; 
+	bottom:rem(-60px);
+	left:0;
+	display: block;
+	width: rem(90px);
+	height: rem(90px);
+	background: transparent;
+	margin: 0 auto;
+	color: $white;
+	text-align: center; 
+	opacity: .7;
+	@include gagalin();
+	font-size: rem(14px);
+	@include tablets() {
+		top:rem(-60px);
+		left:initial;
+		bottom:initial;
+		right:0;
+
+	}
+
+	svg {
+		max-width: rem(60px);
+		max-height: rem(60px);
+	}
+
+	.kkal_value {
+	display: block;
+    margin-top: rem(-40px);
+    margin-bottom: rem(10px);
+	font-size: rem(20px);
+	}
+
+}
+
+
+.burgers__slider__content {
+	display:flex;
+
+	@include tablets() {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+	}
+}
+
+.burgers__slider__img {
+	display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+	width: 50%;
+	padding: rem(10px);
+
+	@include tablets() {
+		width: 70%;
+
+	}
+
+	img {
+		max-width: 100%;
+		height: auto;
+	}
+}
+
+.burgers__slider__desc {
+	width: 50%;
+
+	@include tablets() {
+		width: 100%;
+		text-align: center;
+	}
+}
+
+.burgers__slider__title{
+	text-align: left;
+	line-height: 1;
+	margin-bottom: rem(40px);
+
+	@include tablets() {
+		text-align: center;
+	}
+}
+
+.burgers__slider__text {
+	color: $white;
+	margin-bottom: rem(40px);
+}
+
+.burgers__slider__buy {
+	display: flex;
+	justify-content: flex-start;
+	align-items: baseline;
+
+	@include tablets() {
+		justify-content: center;
+	}
+	
+	.btn {
+		margin-left: rem(30px);
+		font-weight: bold;
+	}
+}
+
+.burgers__slider__price {
+	@include gagalin();
+	font-size: rem(72px);
+	color: $orange;
+	line-height: 0.4;
+
+	span.currency {
+		font-size: rem(30px);
+	}
+}
