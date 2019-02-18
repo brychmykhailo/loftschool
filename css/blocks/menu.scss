@@ -17,18 +17,18 @@
 	}
 }
 
-.vertical-accordion {
+.horizontal-accordion {
 	display: flex;
 	position: absolute;
 	right: 0;
 	height: 100%;
 }
 
-.vertical-accordion-item {
+.horizontal-accordion-item {
 	display: flex;
 }
 
-.vertical-accordion-head {
+.horizontal-accordion-head {
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-end;
@@ -40,6 +40,10 @@
 	color: $white;
 	cursor: pointer;
 
+	&-active {
+		color: $yellow !important;
+	}
+
 	&:before {
 		content: '';
 		display: block;
@@ -49,31 +53,41 @@
 		background-color: rgba(#141414, 0.7);
 	}
 
-	&_active {
-		color: $yellow;
-	}
-
 	&:hover {
 		color: $yellow;
 	}
 }
 
-.vertical-accordion-title {
+.horizontal-accordion-title {
 	font-size: rem(40px);
 	@include gagalin();
-	width: 100%;
-	writing-mode: vertical-lr;
-	transform: rotate(180deg);
-	padding-left: rem(13px);
-	padding-top: rem(40px);
+	white-space: nowrap;
+	transform: rotate(-90deg);
+	padding-left: rem(43px);
 }
 
-.vertical-accordion-content {
-	width: rem(0px);
+.horizontal-accordion-content {
 	display: none;
+	width: 0;
+	overflow: hidden;
 	background-color: rgba(47, 50, 52, 0.93);
 	padding: rem(60px) rem(30px);
 	font-size: rem(14px);
 	@include ubuntu();
 	line-height: rem(24px);
+
+	&-active {
+		display: flex;
+		width: 500px;
+
+		@include tablets() {
+			width: 100%;
+			font-size: rem(12px);
+			line-height: rem(16px);
+		}
+	}
+}
+
+.horizontal-accordion-content-desc {
+	color: $white;
 }

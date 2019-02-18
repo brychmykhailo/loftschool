@@ -13,3 +13,12 @@ document.querySelector('.mobile__menu__btn-active').addEventListener("click", fu
     let body = document.querySelector('body');
     body.classList.remove('body-fixed');
 })
+
+const mobileItems = document.querySelectorAll('.fullscreen__menu__nav-item');
+Array.from(mobileItems).forEach(el => {
+
+el.addEventListener("click", function() {
+    let element = document.querySelector('.fullscreen__menu');
+    element.classList.remove('fullscreen__menu-active');
+});
+})

@@ -24,7 +24,7 @@
 .accordion {}
 
 .accordion-item {
-    padding: rem(30px) rem(0px) rem(0px) rem(0px);
+    padding: rem(10px) rem(0px) rem(0px) rem(0px);
 }
 
 .accordion-head {
@@ -35,18 +35,6 @@
     text-decoration: none;
     text-transform: uppercase;
     position: relative;
-    &:before {
-        content: '';
-        border: rem(6px) solid transparent;
-        border-top: rem(6px) solid $yellow;
-        transition: 0.3s;
-        float: left;
-        width: rem(0px);
-        height: rem(0px);
-        position: absolute;
-        top: rem(8px);
-        left: rem(-20px);
-    }
     &_active {
         color: $yellow;
     }
@@ -58,18 +46,47 @@
         text-align: center;
         display: inline-flex;
     }
+
+    .icon {
+        width: auto;
+        height: auto;
+        display: block;
+        position: absolute;
+        top:6px;
+        float: left;
+        border: rem(6px) solid transparent;
+        border-top: rem(6px) solid $yellow;
+        transition: 0.3s;
+        margin-right: rem(10px);
+
+        &-active {
+            top:0px;
+            transform: rotate(-180deg);
+        }
+    }
+
+    .title {
+        padding-left: 20px;
+    }
+
 }
 
 .accordion-content {
-    padding: rem(20px) rem(0px) rem(0px) rem(20px);
-    display: none;
+    max-height: 0;
     overflow: hidden;
-    transition: max-height 0.2s ease-out;
+    display:flex;
+    padding: rem(20px) rem(0px) rem(0px) rem(20px);
+    transition: all .4s;
+    
     @include tablets () {
         flex-direction: column;
         text-align: center;
         margin: 0 auto;
         padding: 0;
+    }
+    &-active {
+        max-height: 500px;
+        transition: all .6s;
     }
 }
 

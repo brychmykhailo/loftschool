@@ -5,6 +5,7 @@
     width: 100%;
     padding-top: rem(12px);
     @include ubuntu(medium);
+    z-index: 4;
 }
 
 .header__logo img {
