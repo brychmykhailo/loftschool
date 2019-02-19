@@ -25,6 +25,10 @@
 	justify-content: flex-start;
 	top:rem(-60px);
 	left:0;
+
+	@include tablets() {
+		top:rem(-30px);
+	}
 }
 
 .burgers__slider__comp-icon {
@@ -112,7 +116,7 @@
 	@include gagalin();
 	font-size: rem(14px);
 	@include tablets() {
-		top:rem(-60px);
+		top:rem(-30px);
 		left:initial;
 		bottom:initial;
 		right:0;
@@ -180,12 +184,17 @@
 
 	@include tablets() {
 		text-align: center;
+		margin-bottom: rem(10px);
 	}
 }
 
 .burgers__slider__text {
 	color: $white;
 	margin-bottom: rem(40px);
+
+	@include tablets() {
+		margin-bottom: rem(20px);
+	}
 }
 
 .burgers__slider__buy {

@@ -14,7 +14,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 62%;
+        width: 72%;
         margin: 0 auto;
     }
     
@@ -71,6 +71,15 @@
     font-weight: 400;
     margin-right: rem(20px);
     margin-top: rem(20px);
+
+    @include tablets() {
+        margin-top: rem(15px);
+    }
+
+    @include phones() {
+        margin-top: rem(10px);
+    }
+
     &-1x {
         width: calc( 100% - 20px);
 

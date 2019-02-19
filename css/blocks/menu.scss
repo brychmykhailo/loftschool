@@ -91,3 +91,7 @@
 .horizontal-accordion-content-desc {
 	color: $white;
 }
+
+.owl-carousel .owl-stage-outer {
+	overflow: inherit;
+}

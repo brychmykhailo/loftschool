@@ -539,20 +539,20 @@
 			<section class="section delivery" id="delivery">
 				<div class="container container-center">
 					<div class="section-title section-title_yellow">Закажите доставку</div>
-					<form>
+					<form class="delivery__form" name="form" id="order-form">
 						<div class="delivery__form">
 							<div class="delivery__form-left">
 								<label class="delivery__label delivery__label-2x" for="name">Имя
-									<input type="text" class="input" id="name"></label>
+									<input type="text" class="input" id="name" name="name" required></label>
 
 								<label class="delivery__label delivery__label-2x" for="phone">Телефон
-									<input type="phone" class="input" id="phone"></label>
+									<input type="phone" class="input" id="phone" name="phone" required></label>
 
 								<label class="delivery__label delivery__label-1x" for="street">Улица
-									<input type="text" class="input" id="street"></label>
+									<input type="text" class="input" id="street" name="street"></label>
 
 								<label class="delivery__label delivery__label-4x" for="house">Дом
-									<input type="text" class="input" id="house"></label>
+									<input type="text" class="input" id="house" name="house"></label>
 
 								<label class="delivery__label delivery__label-4x" for="korp">Корпус
 									<input type="text" class="input" id="korp"></label>
@@ -567,8 +567,8 @@
 							</div>
 							<div class="delivery__form-right">
 
-								<label class="delivery__label delivery__label-1x" for="message">Комментарий
-									<textarea class="textarea" id="message"></textarea>
+								<label class="delivery__label delivery__label-1x" for="comment">Комментарий
+									<textarea class="textarea" id="comment" name="comment"></textarea>
 								</label>
 
 								<div class="delivery__form-right-oplata">
@@ -671,6 +671,7 @@
 	<script src="js/vertical_accordion.js"></script>
 	<script src="js/carousel/owl.carousel.min.js"></script>
 	<script src="js/carousel/mainowl.js"></script>
+	<script src="js/main.js"></script>
 </body>
 
 </html>
