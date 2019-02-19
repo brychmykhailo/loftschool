@@ -13,16 +13,17 @@ $(document).ready(function () {
 const burgerCompButtons = document.querySelectorAll('.burgers__slider__comp');
 
 for (const CompButton of burgerCompButtons) {
-    CompButton.addEventListener('click', e => {
+    CompButton.addEventListener('mouseenter', e => {
         let CompButton = e.currentTarget;
         let CompValues = CompButton.querySelector('.burgers__slider__comp-values');
         
-        if (CompValues.style.display !== 'initial') {
-
-            CompValues.style.display = 'initial';
-        
-          } else {
-            CompValues.style.display = 'none';
-          }
+        CompValues.style.display = 'initial';
     })
+    CompButton.addEventListener('mouseleave', e => {
+      let CompButton = e.currentTarget;
+      let CompValues = CompButton.querySelector('.burgers__slider__comp-values');
+      
+      CompValues.style.display = 'none';
+  })
+
 }

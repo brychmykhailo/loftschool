@@ -58,6 +58,23 @@
 
 			</div>
 
+			<div class="delivery__form__modal_bg">
+				<div class="delivery__form__modal">
+					<p class="delivery__form__modal-text">Статус отправки</p>
+					<button class="delivery__form__modal-close btn btn-red">Зактыть</button>
+				</div>
+			</div>
+
+			<div class="reviews__modal_bg">
+				<div class="reviews__modal">
+					<div class="reviews__modal__top">
+						<div class="reviews__modal-name">Имя</div>
+						<button class="reviews__modal-btn menutoggle is-active"></button>
+					</div>
+					<p class="reviews__modal-text">Отзыв</p>
+				</div>
+			</div>
+
 
 			<section class="section first-screen" id="first-screen">
 				<div class="container container-space-between">
@@ -442,7 +459,7 @@
 						<div class="reviews-item-hover">
 							<div class="reviews-title">Константин Спилберг</div>
 							<div class="reviews-text">
-								<p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки
+								<p>1Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки
 									могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
 							</div>
 							<div class="reviews-btn"><a href="#" class="btn btn-black">Подробнее</a></div>
@@ -454,7 +471,7 @@
 						<div class="reviews-item-hover">
 							<div class="reviews-title">Константин Спилберг</div>
 							<div class="reviews-text">
-								<p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки
+								<p>2Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки
 									могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
 							</div>
 							<div class="reviews-btn"><a href="#" class="btn btn-black">Подробнее</a></div>
@@ -466,7 +483,7 @@
 						<div class="reviews-item-hover">
 							<div class="reviews-title">Константин Спилберг</div>
 							<div class="reviews-text">
-								<p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки
+								<p>3Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки
 									могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
 							</div>
 							<div class="reviews-btn"><a href="#" class="btn btn-black">Подробнее</a></div>
@@ -641,30 +658,6 @@
 		</div>
 	</div>
 
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-
-	<script type="text/javascript">
-		$(document).ready(function () {
-			$("#header__nav").on("click", "a", function (event) {
-				event.preventDefault();
-				var id = $(this).attr('href'),
-					top = $(id).offset().top;
-				$('body,html').animate({
-					scrollTop: top
-				}, 1000);
-			});
-		});
-		$(document).ready(function () {
-			$("#fixed-menu").on("click", "a", function (event) {
-				event.preventDefault();
-				var id = $(this).attr('href'),
-					top = $(id).offset().top;
-				$('body,html').animate({
-					scrollTop: top
-				}, 1000);
-			});
-		});
-	</script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="js/fullscreenmenu.js"></script>
 	<script src="js/horizontal_accordion.js"></script>
