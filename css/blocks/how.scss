@@ -1,0 +1,18 @@
+.how {
+	background: url('../img/how-bg.jpg') no-repeat center;
+    background-size: cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.video {
+max-width: 50%;
+
+@include phones() {
+	max-width: 80%;
+}
+  }

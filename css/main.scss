@@ -10,12 +10,10 @@ $orange: #e45028;
 //breackpoints
 @import "_misc/breackpoints.scss";
 
-//normalize
-@import "_misc/normalize.scss";
-
 //misc
 @import "_misc/fonts.scss";
 @import "_misc/layout.scss";
+
 
 
 //common
@@ -37,7 +35,6 @@ $orange: #e45028;
 @import "blocks/delivery.scss";
 @import "blocks/contacts.scss";
 @import "blocks/burgers.scss";
+@import "blocks/how.scss";
 @import "blocks/footer.scss";
 @import "blocks/fullscreenmenu.scss";
-
-

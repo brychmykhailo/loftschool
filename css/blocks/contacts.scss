@@ -1,5 +1,13 @@
 .contacts {
-	background: url('../img/map.jpg') no-repeat center;
-	background-size: cover;
 	position: relative;
+}
+
+.contacts__map {
+	width: 100%;
+	height: calc(100% - 63px);
+
+	@include phones () {
+		height: calc(100% - 93px);
+	}
+
 }

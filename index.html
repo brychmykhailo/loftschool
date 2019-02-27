@@ -29,54 +29,53 @@
 				<li class="fixed-menu-point"><a class="fixed-menu-link" href="#menu"></a></li>
 				<li class="fixed-menu-point"><a class="fixed-menu-link" href="#reviews"></a></li>
 				<li class="fixed-menu-point"><a class="fixed-menu-link" href="#how"></a></li>
-				<li class="fixed-menu-point"><a class="fixed-menu-link" href="#form"></a></li>
+				<li class="fixed-menu-point"><a class="fixed-menu-link" href="#delivery"></a></li>
 				<li class="fixed-menu-point"><a class="fixed-menu-link" href="#contacts"></a></li>
 			</ul>
 		</nav>
 
+		<div class="fullscreen__menu">
+			<div class="fullscreen__menu__header">
+				<div class="header__logo">
+					<a href="/"><img src="img/logo.png" alt=""></a>
+				</div>
+				<button class="mobile__menu__btn-active menutoggle is-active">Меню</button>
+				</nav>
+			</div>
+			<nav class="fullscreen__menu__nav">
+				<ul class="fullscreen__menu__nav-items">
+					<li><a href="#we-best" class="fullscreen__menu__nav-item">О нас</a></li>
+					<li><a href="#burgers" class="fullscreen__menu__nav-item">Бургеры</a></li>
+					<li><a href="#team" class="fullscreen__menu__nav-item">Команда</a></li>
+					<li><a href="#menu" class="fullscreen__menu__nav-item">Меню</a></li>
+					<li><a href="#reviews" class="fullscreen__menu__nav-item">Отзывы</a></li>
+					<li><a href="#how" class="fullscreen__menu__nav-item">как мы работаем</a></li>
+					<li><a href="#contacts" class="fullscreen__menu__nav-item">Контакты</a></li>
+				</ul>
+			</nav>
+
+		</div>
+
+		<div class="delivery__form__modal_bg">
+			<div class="delivery__form__modal">
+				<p class="delivery__form__modal-text">Статус отправки</p>
+				<button class="delivery__form__modal-close btn btn-red">Зактыть</button>
+			</div>
+		</div>
+
+		<div class="reviews__modal_bg">
+			<div class="reviews__modal">
+				<div class="reviews__modal__top">
+					<div class="reviews__modal-name">Имя</div>
+					<button class="reviews__modal-btn menutoggle is-active"></button>
+				</div>
+				<p class="reviews__modal-text">Отзыв</p>
+			</div>
+		</div>
+		
 		<div class="maincontent">
 
-			<div class="fullscreen__menu">
-				<div class="fullscreen__menu__header">
-					<div class="header__logo">
-						<a href="/"><img src="img/logo.png" alt=""></a>
-					</div>
-					<button class="mobile__menu__btn-active menutoggle is-active">Меню</button>
-					</nav>
-				</div>
-				<nav class="fullscreen__menu__nav">
-					<ul class="fullscreen__menu__nav-items">
-						<li><a href="#we-best" class="fullscreen__menu__nav-item">О нас</a></li>
-						<li><a href="#burgers" class="fullscreen__menu__nav-item">Бургеры</a></li>
-						<li><a href="#team" class="fullscreen__menu__nav-item">Команда</a></li>
-						<li><a href="#menu" class="fullscreen__menu__nav-item">Меню</a></li>
-						<li><a href="#reviews" class="fullscreen__menu__nav-item">Отзывы</a></li>
-						<li><a href="#how" class="fullscreen__menu__nav-item">как мы работаем</a></li>
-						<li><a href="#contacts" class="fullscreen__menu__nav-item">Контакты</a></li>
-					</ul>
-				</nav>
-
-			</div>
-
-			<div class="delivery__form__modal_bg">
-				<div class="delivery__form__modal">
-					<p class="delivery__form__modal-text">Статус отправки</p>
-					<button class="delivery__form__modal-close btn btn-red">Зактыть</button>
-				</div>
-			</div>
-
-			<div class="reviews__modal_bg">
-				<div class="reviews__modal">
-					<div class="reviews__modal__top">
-						<div class="reviews__modal-name">Имя</div>
-						<button class="reviews__modal-btn menutoggle is-active"></button>
-					</div>
-					<p class="reviews__modal-text">Отзыв</p>
-				</div>
-			</div>
-
-
-			<section class="section first-screen" id="first-screen">
+			<section class="section first-screen active" id="first-screen">
 				<div class="container container-space-between">
 
 					<header class="header">
@@ -553,6 +552,23 @@
 				</ul>
 			</section>
 
+
+
+			<section class="section how" id="how">
+
+				<div class="section-title section-title_ black"> Как мы работаем</div>
+
+				<div class="video">
+					<video controls style="width:100%;" poster="img/poster.jpg">
+						<source src="burger.mp4" type="video/mp4">
+						<p>Ваш браузер не поддерживает HTML5 видео. Вот здесь <a href="burger.mp4">ссылка на видео</a>.</p>
+					  </video>
+				</div>
+
+			</section>
+
+
+			
 			<section class="section delivery" id="delivery">
 				<div class="container container-center">
 					<div class="section-title section-title_yellow">Закажите доставку</div>
@@ -615,10 +631,12 @@
 				</div>
 			</section>
 
+
+
 			<section class="section contacts" id="contacts">
 
 				<div class="contacts__map">
-
+					<iframe id="map" src="https://www.google.com/maps/d/embed?mid=1_Sh_LAyOFAbsMyU9XkN9OLb-qtNNiSoE" width="100%" height="100%" frameborder="0"></iframe>
 				</div>
 
 				<footer class="footer">
@@ -658,7 +676,9 @@
 		</div>
 	</div>
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.3.6/mobile-detect.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.18/jquery.touchSwipe.min.js"></script>
 	<script src="js/fullscreenmenu.js"></script>
 	<script src="js/horizontal_accordion.js"></script>
 	<script src="js/vertical_accordion.js"></script>
